@@ -1,22 +1,28 @@
+:root{
+    --db: darkblue;
+    --wt: white;
+    --sb: solid black;
+}
+
 nav {
-    background-color: darkblue;
+    background-color: var(--db);
     padding: 10px;
 }
 
 nav a {
-    color: white;
+    color: var(--wt);
     display: block;
     padding: 20px;
 }
 
 h1 {
-    color: darkblue;
+    color: var(--db);
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: 1px var(--sb);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -46,6 +52,6 @@ aside img{
 
 footer{
     margin-top: 15px;
-    border-top: 1px solid #000;
+    border-top: 1px var(--sb);
     text-align: center;
 }
