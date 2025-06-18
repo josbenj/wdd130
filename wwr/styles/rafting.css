@@ -198,14 +198,21 @@ footer p{
     grid-template-columns:  1fr 1fr;
 }
 
-.employ{
-    grid-column: 1/3;
+.employ {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     padding: 10px;
     margin-top: 30px;
+    grid-column: 1/-1;
 }
 
-.contact h1{
-    margin: 5px auto
+.employ h1{
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: var(--heading-font);
+    color: var(--accent2-color)
+    
 }
 
 /*sect1 Information*/
@@ -228,7 +235,7 @@ footer p{
 
 .map iframe{
     width: 100%;
-    max-width: 500px;
+    max-width: 300px;
     height:300px;
     border: 0;
     border-radius: 10px;
@@ -237,21 +244,15 @@ footer p{
 
 /*sect0 employ*/
 
-.employ{
-    display: grid;
-    grid-auto-flow: column;
-    justify-items: center;
-    gap: 20px;
-}
-
 .employ img{
-    height: 240px;
+    height: 200px;
     width: 100%;
-    max-width: 240px;
+    max-width: 200px;
 }
 
 figcaption{
-    color: #222;
+    color: var(--secundary-color);
+    font-size: 0.8rem;
 }
 
 .contact figure{
@@ -335,13 +336,31 @@ button:hover {
     align-items: center;
 }
 
-.column1{
-    grid-template-columns: 3fr 1fr;
-    margin: 0.5rem 0;
+.column1 p{
+    color: #fff;
+    grid-column: 1/3;
+    text-align: left;
+    font-size: 0.9rem;
+    padding: 0px;
+}
+
+.column1 {
+    grid-template-columns: 2fr 1fr;
+    padding: 0px 0px 20px;
+}
+
+.column1 label{
+    text-align: left;
+    
 }
 
 .column2 {
     grid-template-columns: 1fr 2fr;
+}
+
+.column3{
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
 }
 
 .wireframe{
