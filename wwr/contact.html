@@ -94,17 +94,23 @@
             <fieldset>
                 <legend>Questions</legend>
 
-                    <div class="form-item column1">
-                        <p>Purpose:</p>
-                        <label>
-                            <input type="radio" name="purpose" value="general-inquiry" checked> Reservation Question
-                        </label><br>
-                        <label>
-                            <input type="radio" name="purpose" value="reservation-question" checked> Reservation Question
-                        </label><br>
-                        <label>
-                            <input type="radio" name="purpose" value="website-suggestion" checked> Website Suggestion
-                        </label><br>
+                    <div id="purpose-options" class="form-item column1">
+                    <p>Purpose:</p>
+
+                    <label for="purpose-general">
+                        <input type="radio" id="purpose-general" name="purpose" value="general-inquiry" checked>
+                        General Inquiry
+                    </label><br>
+
+                    <label for="purpose-reservation">
+                        <input type="radio" id="purpose-reservation" name="purpose" value="reservation-question">
+                        Reservation Question
+                    </label><br>
+
+                    <label for="purpose-website">
+                        <input type="radio" id="purpose-website" name="purpose" value="website-suggestion">
+                        Website Suggestion
+                    </label><br>
                     </div>
 
                     <label for="feedback">Write your question here:</label>
