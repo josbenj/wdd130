@@ -64,6 +64,10 @@ article {
     color: var(--accent2-color);
 }
 
+.hero p {
+    font-weight: bold;
+}
+
 .about h1 {
     position: absolute;
     top: 50px;
@@ -248,6 +252,7 @@ footer p{
     height: 200px;
     width: 100%;
     max-width: 200px;
+    border-radius: 5%;
 }
 
 figcaption{
@@ -372,4 +377,303 @@ button:hover {
     border: 1px solid gray;
     text-decoration: none;
 }
+
+/*HOME PAGE css*/
+.hero_home h1{
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+.hero_home h1 {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    opacity: 1;
+    background-color: var(--primary-color);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+.hero_home img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    opacity: .9;
+}
+
+.hero_home article {
+    position: absolute;
+    top: 300px;
+    width: 95%;
+    padding: 10px;
+    text-align: center;
+}
+
+.hero_home .hh {
+    color: #fff;
+    font-weight: bold;
+    font-size: 2rem;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.hero_home {
+    position: relative;
+    padding: 30px 0px;
+    height: 500px;
+    
+}
+
+.hero_home h2{
+    padding: 0;
+    color: var(--accent2-color);
+}
+
+.hero_home article img {
+    float: right;
+    width: 125px;
+}
+
+
+.tops {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 8px;
+    gap: 20px;
+    text-align: center;
+}
+
+.tops img {
+    width: 100%;
+    object-fit: cover;
+    height: 220px;
+}
+
+.home main h2 {
+    padding: 0px 0px 30px 0px;
+    text-align: center;
+}
+
+.tops figcaption {
+    color: #222;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.tops figure {
+    text-align: center;
+    margin-bottom: -15px;
+}
+
+.call {
+  background-color: #3bcaba;
+  color: white;
+  text-align: center;
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+  margin: 2rem auto;
+}
+
+.call h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.call p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+
+.go {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.go:hover{
+  background-color: var(--accent2-color);
+  color: #fff;
+}
+
+.form_home {
+    box-sizing: border-box;
+}
+
+.form_home {
+    width: 94%;
+    margin: 30px auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+    display: grid;
+    gap: 1rem;
+}
+
+.form_home fieldset {
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.form_home h3 {
+    margin-top: -25px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    justify-self: center;
+    grid-column: 1/4;
+}
+
+
+.form_home label {    
+    padding-right: 1rem;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.form_home input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    border: 1px solid #ccc;
+}
+
+.name {
+    grid-column: 2/3;
+}
+
+.email {
+    grid-column: 2/3;
+}
+
+.plus {
+    grid-column: 2/3;
+    margin-left: 30px;
+}
+
+.form_home button {
+    background-color: rgb(255, 255, 255);
+    color: var(--accent2-color);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 150px;
+}
+
+.form_home button:hover {
+    background-color: #3bcaba;
+    font-weight: bold;
+    color: #fff;
+}
+
+/*TRIPS css*/
+
+.t h1 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+.trips {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.trips img{
+    width: 380px;
+    height: 250px;
+    gap: 50px;
+    margin-top: 30px;
+    border-radius: 5%;
+}
+
+.trips p {
+    margin: -15px;
+}
+
+.trips h2 {
+    font-family: var(--body-font);
+    justify-self: left;
+    margin-left: -8px;
+}
+
+.tellme {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.tellme:hover{
+  background-color: var(--accent2-color);
+  color: #fff;
+}
+
+.aot {
+    margin-bottom: -50px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-size: 1rem;
+  text-align: left;
+}
+
+caption {
+  caption-side: top;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--accent2-color);
+}
+
+thead {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.tr1 th {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  color: #fff;
+}
+
+td {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  color:rgba(0, 0, 0, 0.8)
+}
+
+.tbody th {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  color:rgba(0, 0, 0, 0.8)
+}
+
+
 
